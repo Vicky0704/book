@@ -8,74 +8,16 @@ import { RouterLink, RouterView } from 'vue-router'
       <div id="logo">
         <ol>
           <li>
-            <div class="dropdown">
-              <RouterLink class="a dropbtn" to="/about">關於我們</RouterLink>
-              <div class="dropdown-content">
-                <div class="dropdown-content">
-                  <a href="http://www.runoob.com">關於我們 1</a>
-                  <div class="dropdown-content_a">
-                    <a href="http://www.runoob.com">關於我們 1-1</a>
-                      <div class="dropdown-content_a">
-                        <a href="http://www.runoob.com">關於我們 1-1-1</a>
-                        <a href="http://www.runoob.com">關於我們 1-1-2</a>
-                        <a href="http://www.runoob.com">關於我們 1-1-3</a>
-                      </div>
-                    <a href="http://www.runoob.com">關於我們 1-2</a>
-                    <a href="http://www.runoob.com">關於我們 1-3</a>
-                  </div>
-                </div>
-                <div class="dropdown-content">
-                  <a href="http://www.runoob.com">關於我們 2</a>
-                  <div class="dropdown-content_a">
-                    <a href="http://www.runoob.com">關於我們 2-1</a>
-                    <div class="dropdown-content_a">
-                      <a href="http://www.runoob.com">關於我們 2-1-1</a>
-                      <a href="http://www.runoob.com">關於我們 2-1-2</a>
-                      <a href="http://www.runoob.com">關於我們 2-1-3</a>
-                    </div>
-                    <a href="http://www.runoob.com">關於我們 2-2</a>
-                    <a href="http://www.runoob.com">關於我們 2-3</a>
-                  </div>
-                </div>
-                <div class="dropdown-content">
-                  <a href="http://www.runoob.com">關於我們 3</a>
-                  <div class="dropdown-content_a">
-                    <a href="http://www.runoob.com">關於我們 3-1</a>
-                    <div class="dropdown-content_a">
-                      <a href="http://www.runoob.com">關於我們 3-1-1</a>
-                      <a href="http://www.runoob.com">關於我們 3-1-2</a>
-                      <a href="http://www.runoob.com">關於我們 3-1-3</a>
-                    </div>
-                    <a href="http://www.runoob.com">關於我們 3-2</a>
-                    <div class="dropdown-content_a">
-                      <a href="http://www.runoob.com">關於我們 3-2-1</a>
-                      <a href="http://www.runoob.com">關於我們 3-2-2</a>
-                      <a href="http://www.runoob.com">關於我們 3-2-3</a>
-                    </div>
-                    <a href="http://www.runoob.com">關於我們 3-3</a>
-                  </div>
-                </div>
-              </div>
-              <!-- <div class="dropdown-content">
-                <a href="http://www.runoob.com">關於我們 1</a>
-                <div class="dropdown-content_2">
-                  <a href="http://www.runoob.com">關於我們 2</a>
-                  <div class="dropdown-content_2_1">
-                    <a href="http://www.runoob.com">關於我們 2-1</a>
-                    <a href="http://www.runoob.com">關於我們 2-2</a>
-                    <a href="http://www.runoob.com">關於我們 2-3</a>
-                  </div>
-                </div>
-                <div class="dropdown-content_3">
-                  <a href="http://www.runoob.com">關於我們 3</a>
-                  <div class="dropdown-content_3_1">
-                    <a href="http://www.runoob.com">關於我們 3-1</a>
-                    <a href="http://www.runoob.com">關於我們 3-2</a>
-                    <a href="http://www.runoob.com">關於我們 3-3</a>
-                  </div>
-                </div>
-              </div> -->
-            </div>
+            <RouterLink class="a dropbtn" to="/about">關於我們</RouterLink>
+            <ol class="dropdown-menu">
+              <li><a href="#">關於我們 1</a></li>
+              <li><a class="dropbtn" href="#">第 1 層關於我們 <span class="caret"></span></a>
+                  <ol class="dropdown-menu">
+                      <li><a href="#">關於我們 1-1</a></li>
+                      <li><a href="#">關於我們 1-2</a></li>
+                  </ol>
+              </li>
+            </ol>
           </li>
           <li><RouterLink class="a b02" to="/product">歷屆文集</RouterLink></li>
           <li><RouterLink class="a b03" to="/hotnews">最新消息</RouterLink></li>

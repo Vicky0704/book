@@ -34,9 +34,5 @@
             <p class="tt01">&emsp;&emsp;雖然大致上課程內容都有學過，不過我很熱衷於網頁，所以覺得上課很有趣，網頁這東西包含太多語言，要學的精通沒有個1、2年是無法得心應手的，只是學校沒有購買Adobe系列的軟體著實有點可惜，但是Visual Studio好處在每一個程式碼都是親手打的，所以在學習上比較好，我本身對於CSS比較不熟，因為很多都是靠Dreamweaver強大的功能滑鼠點一點就完成的，所以手打上面比較生疏，希望後面課程會有更多CSS教學。[<a href="#">top</a>]</p>
           </div>
         <!-- InstanceEndEditable -->
-
-        <!-- InstanceBeginEditable name="頁尾"footer -->
-        <div id="footer">臺中市太平區坪林里中山路二段57號　　TEL:(04)23924505　FAX:(04)23923363　<a href="mailto:aaa123@google.com">aaa123@google.com</a>　&copy;copyright2021</div>
-        <!-- InstanceEndEditable -->
   </main>
 </template>
