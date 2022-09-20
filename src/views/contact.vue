@@ -6,6 +6,15 @@
   const bool_array = place_data_vue.value
     .filter(bool => bool.value === 1)
     .map(item => item.content)
+  function clickmap(cm){
+    console.log(cm);
+    // window.scrollTo(0,document.getElementById(cm).offsetTop);
+    window.scrollTo({ 
+      top: document.getElementById(cm).offsetTop, 
+      behavior: "smooth" 
+    });
+    // location.hash='#'+cm;
+  }
 </script>
 <template>
   <main>
@@ -35,7 +44,7 @@
           <br>
           <h1 id="a02">各地分會</h1>
           <br>
-          <div id="taiwan"><taiwan :dataname="bool_array" /></div>
+          <div id="taiwan"><taiwan :dataname="bool_array" @update="clickmap" /></div>
           <!-- <img src="../../images/contact/taiwan01.jpg" usemap="#taiwanmap" height="450px" width="450px" /> -->
           <!-- <map name="taiwanmap">
             <area href="#aa1" alt="台北分校" shape="circle" coords="303,41,20">
