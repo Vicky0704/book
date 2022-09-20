@@ -36,13 +36,13 @@
           <br>
           <!-- <button type="button" @click="changeCount">count is: {{ store.count }}, count2 is : {{store.count2}}</button> -->
           <h2 id="aa5">{{store.main[0].name}}</h2>
-          <p><iframe src="{{store.main[0].src}}" width="425" height="350" style="border:0;" loading="lazy"></iframe></p>         
+          <p><iframe :src="store.main[0].src" width="425" height="350" style="border:0;" loading="lazy"></iframe></p>         
           <p>
             <ul class="tt01" style="list-style: none;">
               <li>✈ 地&emsp;&emsp;址：{{store.main[0].add}}</li>
               <li>☏ 聯絡專線：{{store.main[0].cphone}}</li>
               <li>℻ 傳真電話：{{store.main[0].mphone}}</li>
-              <li>✉ 信&emsp;&emsp;箱：<a style="border-right:none;" href="mailto:{{store.main[0].mail}}">{{store.main[0].mail}}</a></li>
+              <li>✉ 信&emsp;&emsp;箱：<a style="border-right:none;" :href="'mailto:'+store.main[0].mail">{{store.main[0].mail}}</a></li>
             </ul>
           </p>
           <br>
@@ -60,13 +60,13 @@
 
           <br>
           <template v-for="(item,index) of store.branch" :key="item.id">
-            <h2 id="taipei_city">{{item.name}}</h2>
-            <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.6260057569243!2d121.53858061542581!3d25.012821145293152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aa2176c4c0ad%3A0x90db5e44ee29f455!2z5ZyL56uL6Ie654Gj56eR5oqA5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1635670672357!5m2!1szh-TW!2stw" width="425" height="350" style="border:0;" loading="lazy"></iframe></p>
+            <h2 :id="item.idname">{{item.name}}</h2>
+            <p><iframe :src="store.branch[0].src" width="425" height="350" style="border:0;" loading="lazy"></iframe></p>
             <p>
               <ul class="tt01" style="list-style: none;">
                 <li>✈ 地&emsp;&emsp;址：{{item.add}}</li>
                 <li>☏ 聯絡專線：{{item.cphone}}</li>
-                <li>✉ 信&emsp;&emsp;箱：<a style="border-right:none;" href="mailto:bbb123@gmail.com">{{item.mail}}</a></li>
+                <li>✉ 信&emsp;&emsp;箱：<a style="border-right:none;" :href="'mailto:'+item.mail">{{item.mail}}</a></li>
               </ul>
             </p>
             <br>[<a href="#a02">map</a>][<a href="#">top</a>]
